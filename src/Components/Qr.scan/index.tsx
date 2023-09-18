@@ -9,7 +9,7 @@ const QRCodeScanner: React.FC = () => {
       const scanner = new QrScanner(videoRef.current, (result: string) => {
         // Handle the QR code result here
         console.log(`QR Code detected: ${result}`)
-        // alert(`QR Code detected: ${result}`);
+        alert(`QR Code detected: ${result}`);
       });
 
       scanner.start();
