@@ -1,4 +1,4 @@
-import QR from "../Components/Qr.generate";
+// import QR from "../Components/Qr.generate";
 import QRCodeScanner from "../Components/Qr.scan";
 import "./book.ecent.css"
 
