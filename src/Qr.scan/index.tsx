@@ -23,7 +23,7 @@ const QRCodeScanner: React.FC = () => {
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
       <h1>QR Code Scanner</h1>
-      <video ref={videoRef} style={{maxWidth: "30%",
+      <video ref={videoRef} style={{maxWidth: "70%",
     minHeight: "500%",border:"10px solid rgba(128, 128, 128,40%)",borderRadius:"5px" }} />
     </div>
   );
