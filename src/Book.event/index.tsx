@@ -16,7 +16,7 @@ const Book_event = () => {
     // const navigate = useNavigate()
     // const [active, setActive] = useState<boolean>(false)
     const { register, handleSubmit, formState: { errors },
-    //  watch 
+        //  watch 
     } = useForm<any>(
         {
             // resolver: yupResolver(signupSchema)
@@ -113,10 +113,10 @@ const Book_event = () => {
         <div className="book-event">
             <img src="/logo.svg" className="logo" />
             <div className="book-event-contain">
-                <p>Sign Up</p>
+                <p>Payment Method</p>
                 <div className="book-event-input-wrap">
                     {inputData.map((i, index) => (<Input key={index} {...i} register={register} errors={errors} />))}
-                    <Button disabled={false} style={{ marginTop: 15, }} handleClick={handleSubmit(() => { })} type="filled" children="Create my account" />
+                    <Button disabled={false} style={{ marginTop: 20 , }} handleClick={handleSubmit(() => { })} type="filled" children="Create my account" />
                     {/* <Button disabled={!active ? true : isLoading} style={{ marginTop: 15, opacity: !active ? 0.6 : (isLoading && 0.6) }} isLoading={isLoading} handleClick={handleSubmit(onSubmit)} type="filled" children="Create my account" /> */}
                 </div>
 

@@ -3,7 +3,11 @@
   height: 50px;
   border-radius: 5px;
   border: none;
-  background-image: linear-gradient(rgba(255, 204, 2, 1), rgba(255, 145, 1, 1));
+  background-image: linear-gradient(
+    rgba(196, 77, 72, 1),
+    rgba(222, 105, 100, 1),
+    rgba(149, 44, 40, 1)
+  );
   color: rgba(255, 255, 255, 1);
   font-size: 15px;
   font-weight: 400;
@@ -51,7 +55,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 @media screen and (max-width: 425px) {
   .button-outline {
