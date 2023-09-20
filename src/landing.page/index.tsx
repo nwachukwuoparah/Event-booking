@@ -21,7 +21,7 @@ const Landing_page = () => {
                 <span className="hero-section-bottom-left">
                     <h1>Ticket Purchase Portal</h1>
                     <p>Welcome <br />Please click the button below to begin your ticket <br /> purchase.</p>
-                    <Button type="out-line" children="Get Started" />
+                    <Button type="out-line" children="Get Started" handleClick={() => navigate("/book/event")} />
                 </span>
                 <span className="hero-section-bottom-right">
                     <img src="/heroImage.svg" alt="" />
