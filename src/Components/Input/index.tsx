@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { inputType } from "../type.check"
 import './input.css'
 
