@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./landing.css"
+import "./home.css"
 import Button from "../Components/Button";
 
 const Landing_page = () => {
