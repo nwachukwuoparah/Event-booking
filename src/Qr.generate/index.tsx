@@ -10,7 +10,7 @@ const QR = () => {
     }
 
     useEffect(() => {
-        generate("thecurveafrica@gmail.com")
+        generate("thecurveafrica16@gmail.com")
     }, [])
 
     return (
