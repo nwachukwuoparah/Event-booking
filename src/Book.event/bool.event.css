@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 425px) {
   .book-event {
-    padding: 56px 35px;
+    padding: 56px 20px;
   }
   .book-event-contain {
     width: 100%;
