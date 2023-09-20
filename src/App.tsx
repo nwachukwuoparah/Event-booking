@@ -1,14 +1,24 @@
 import Book_event from "./Book.event/book.event"
-
+import QRCodeScanner from "./Qr.scan"
+import Landing_page from "./landing.page"
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 
 function App() {
 
 
   return (
-    <div>
-      <Book_event />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing_page />} />
+        <Route path="/book/event" element={<Book_event />} />
+        <Route path="/scan" element={<QRCodeScanner />} />
+      </Routes>
+    </Router>
+
+
+
+
   )
 }
 

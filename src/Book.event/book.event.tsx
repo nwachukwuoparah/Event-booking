@@ -1,13 +1,10 @@
-import QR from "../Components/Qr.generate";
-// import QRCodeScanner from "../Components/Qr.scan";
+import QR from "../Qr.generate";
 import "./book.ecent.css"
 
 const Book_event = () => {
     return (
         <div>
-           
             <QR />
-             {/* <QRCodeScanner /> */}
         </div>
     )
 };

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+
 const QR = () => {
-    
     const [data, setData] = useState<string>()
 
 
@@ -10,14 +10,14 @@ const QR = () => {
     }
 
     useEffect(() => {
-        generate("nwachukwuoparah@gmail.com")
+        generate("thecurveafrica@gmail.com")
     }, [])
 
-    return (<div style={{ display: "flex", alignItems: "center", justifyContent: "center",height:"100vh" }}>
-        <img src={data} />
-    </div>)
-
-
+    return (
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh" }}>
+            <img src={data} />
+        </div>
+    )
 };
 
 export default QR;
