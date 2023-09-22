@@ -4,7 +4,9 @@
   background-color: rgba(254, 206, 202, 1);
   align-items: center;
 }
-
+.book-event img{
+cursor: pointer;
+}
 .book-event-contain {
   display: flex;
   flex-direction: column;

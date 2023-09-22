@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const QR = () => {
+const Generate = () => {
     const [data, setData] = useState<string>()
 
 
@@ -20,4 +20,4 @@ const QR = () => {
     )
 };
 
-export default QR;
+export default Generate;

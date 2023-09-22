@@ -3,11 +3,13 @@ import { UseFormRegister } from "react-hook-form"
 export interface inputType {
     type: string;
     placeholder: string;
-    icon: string;
+    icon?: string;
     name: any
     register: UseFormRegister<any>
     errors: any
     inputType: string
+    styles?: any
+    maxLength?: number
 }
 export interface IFormInput {
     profilePicture: string

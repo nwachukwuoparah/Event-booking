@@ -1,23 +1,33 @@
-import { useState, useEffect } from "react"
+import React, { useRef, useEffect } from "react";
+import QrScanner from "qr-scanner";
 
-const Qr = () => {
-    useState
-    const [data, setData] = useState<string>()
+const QRCodeScanner: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      const scanner = new QrScanner(videoRef.current, (result: string) => {
+        // Handle the QR code result here
+        if (result) {
+          alert(`QR Code detected: ${result}`);
+          scanner.stop();
+        }
+      });
 
-    const generate = async (data: any) => {
-        const code = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${data}`
-        setData(code)
+      scanner.start();
+      
+      return () => {
+        scanner.stop();
+      };
     }
+  }, []);
 
-    useEffect(() => {
-        generate("nwachukwuoparah@gmail.com")
-    }, [])
-
-    return (<div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh" }}>
-        <img src={data} />
-    </div>)
+  return (
+    <div>
+      <h1>QR Code Scanner</h1>
+      <video ref={videoRef} style={{ width: "100%" }} />
+    </div>
+  );
 };
 
-export default Qr;
-
+export default QRCodeScanner;
