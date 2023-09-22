@@ -19,9 +19,15 @@ const Landing_page = () => {
 
             <div className="hero-section-bottom">
                 <span className="hero-section-bottom-left">
+                    <div className="hero-section-title">
+                        Love Feast 2024
+                    </div>
                     <h1>Ticket Purchase Portal</h1>
                     <p>Welcome <br />Please click the button below to begin your ticket <br /> purchase.</p>
-                    <Button type="out-line" style={{ width: "62%", padding: "35px 0px", borderRadius: "50px", fontSize: "25px", marginTop: "30px" }} children="Get Started" handleClick={() => navigate("/book/event")} />
+                    {/* <a href="https://tix.africa/discover/cyonfeast"> */}
+                        <button className="hero-section-button">Get Started</button>
+                    {/* </a> */}
+
                 </span>
                 <span className="hero-section-bottom-right">
                     <img src="/heroImage.svg" alt="" />
