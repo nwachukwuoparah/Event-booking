@@ -1,10 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import "./home.css"
-import Button from "../Components/Button";
 
 const Landing_page = () => {
 
-    const navigate = useNavigate()
 
 
     return (
@@ -25,7 +22,7 @@ const Landing_page = () => {
                     <h1>Ticket Purchase Portal</h1>
                     <p>Welcome <br />Please click the button below to begin your ticket <br /> purchase.</p>
                     {/* <a href="https://tix.africa/discover/cyonfeast"> */}
-                        <button className="hero-section-button">Get Started</button>
+                    <button className="hero-section-button">Get Started</button>
                     {/* </a> */}
 
                 </span>
