@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../Components/Button";
 import Input from "../Components/Input";
-import { IFormInput } from "../Components/type.check";
+// import { IFormInput } from "../Components/type.check";
 import "./bool.event.css"
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm,
+    //  SubmitHandler
+     } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { useMutation } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
@@ -17,7 +19,7 @@ const Book_event = () => {
     const [modal, setModal] = useState<boolean>(false)
     const {
         register,
-        handleSubmit,
+        // handleSubmit,
         formState: { errors },
         watch
     } = useForm<any>(
@@ -26,15 +28,15 @@ const Book_event = () => {
         }
     )
 
-    const onSubmit: SubmitHandler<IFormInput> = (data) => {
-        mutate(data)
-    }
+    // const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    //     mutate(data)
+    // }
 
     const {
         // error,
         // data,
         isLoading,
-        mutate,
+        // mutate,
     } = useMutation(["book-event"], bookEvent, {
         onSuccess: async (data: any) => {
             if (data)

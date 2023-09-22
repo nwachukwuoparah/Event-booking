@@ -4,7 +4,10 @@ import "./confirm.css"
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Otp } from "../Components/schema";
 import Button from "../Components/Button";
-import { useNavigate, useParams } from "react-router-dom";
+import {
+    // useNavigate,
+    useParams
+} from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { confirmOtp } from "../Components/Api/mutate";
 import { useEffect, useState } from "react";
@@ -14,7 +17,7 @@ const Confirm = () => {
     const { ref } = useParams()
     const [active, setActive] = useState<boolean>(false)
     const [modal, setModal] = useState<boolean>(false)
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const {
         register,
@@ -64,7 +67,7 @@ const Confirm = () => {
 
     return (
         <>
-            {modal && <Modal styles={{ fontSize: "20px",lineHeight:"30px" }} title={confirmData?.data?.data?.message} check={check} type={true} />}
+            {modal && <Modal styles={{ fontSize: "20px", lineHeight: "30px" }} title={confirmData?.data?.data?.message} check={check} type={true} />}
             <div className="confirm-wrap">
                 <img src="/logo.svg" className="logo" />
                 <div className="confirm-contain">
