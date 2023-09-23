@@ -22,12 +22,12 @@ const Landing_page = () => {
                     <h1>Ticket Purchase Portal</h1>
                     <p>Welcome <br />Please click the button below to begin your ticket <br /> purchase.</p>
 
-                    <button className="hero-section-button">
-                        <a style={{
-                                textDecoration: "none",
-                                color: "inherit"
-                            }} href="https://tix.africa/discover/cyonfeast">Get Started</a>
-                    </button>
+                    <a style={{
+                        textDecoration: "none",
+                        color: "inherit"
+                    }} href="https://tix.africa/discover/cyonfeast"> <button className="hero-section-button">
+                            Get Started
+                        </button></a>
                 </span>
                 <span className="hero-section-bottom-right">
                     <img src="/heroImage.svg" alt="" />
